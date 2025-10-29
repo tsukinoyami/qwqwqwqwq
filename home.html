@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>UWU</title>
+    <script src="home.js">
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('loginBoton');
+            button.addEventListener('click', () => {
+                const palabra = document.getElementById('loginPalabra').value;
+                if (palabra.toString() === 'valentine') {
+                    
+                }
+            });
+        });
+    </script>
+</head>
+    <div class="cD" id="loginSection">
+        <h1 style="color:rgb(100, 237, 182); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">HOLI JEJE ESKERE</h1>
+        <input type="text" placeholder="palabra secreta" id="loginPalabra">
+        <input type="submit" value="ESO" id="loginBoton">
+        <p>pista: el nombre de la cancion del llavero que te regale</p>
+    </div>
+    <div class="hidden" id="mainPagina">
+        <div id="modal-overlay" class="modal-oculto">
+
+        <div id="modal-message">
+            <input type="button" value="X" id="modal-close-button" onclick="cerrar()">
+            <div id="modal-content">
+                <h2 id="mensajeHeader"></h2>
+                <p id="mensajeParrafo"></p>
+                <div class="hidden" class="interactiveBox" id="besoWebhook">
+                    <input type="number" name="cuantos besso" id="besoCounter" placeholder="numero de besos" class="defaultInput">
+                    <input type="button" value="mensaje uwu" onclick="besos()" class="defaultSubmit">
+                </div>
+
+                <div id="mensajitoWebhook" class="interactiveBox">
+                    <input type="text" name="" placeholder="mensajito" id="mensajitoInput" class="defaultInput">
+                    <input type="submit" value="enviar" onclick="mandarMensaje()" class="defaultSubmit">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <body style="background-color: palevioletred;">
+    <h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">abrelas cuando lo necesites uwu</h1>
+    <div class="cD" id="gridDiv">
+        
+        <div class="carta">
+            <h2>ábreme cuando recibas esto</h2>
+            <input type="submit" value="abrir" onclick="abrir(1)">
+        </div>
+
+        <div class="carta">
+            <h2>ábreme cuando me extrañes</h2>
+            <input type="submit" value="abrir" onclick="abrir(2)">
+        </div>
+
+        <div class="carta">
+            <h2>ábreme cuando tengas hambre</h2>
+            <input type="submit" value="abrir" onclick="abrir(3)">
+        </div>
+
+        <div class="carta">
+            <h2>ábreme cuando estés enojada</h2>
+            <input type="submit" value="abrir" onclick="abrir(4)">
+        </div>
+
+        <div class="carta">
+            <h2>ábreme cuando estés feliz</h2>
+            <input type="submit" value="abrir" onclick="abrir(5)">
+        </div>
+
+        <div class="carta">
+            <h2>ábreme cuando no te conteste</h2>
+            <input type="submit" value="abrir" onclick="abrir(6)">
+        </div>
+
+        <div class="carta">
+            <h2>ábreme cuando me quieras dar un beso</h2>
+            <input type="submit" value="abrir" onclick="abrir(7)">
+        </div>
+
+        <div class="carta">
+            <h2>ábreme cuando estés aburrida</h2>
+            <input type="submit" value="abrir" onclick="abrir(8)">
+        </div>
+
+        <div class="carta">
+            <h2>mandame un mensajito al discord uwu</h2>
+            <input type="submit" value="abrir" onclick="abrir(9)">
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.cD{
+    display: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#gridDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.carta{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    input[type="submit"] {
+        background-color: rgb(155, 112, 216);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+/* --- Clases de Control de Visibilidad --- */
+
+/* Clase que puedes usar para ocultar cualquier elemento, incluida la .carta si quieres */
+.hidden {
+    display: none;
+}
+
+/* Clase para ocultar el modal inicialmente */
+.modal-oculto {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Clase que se añade con JavaScript para MOSTRAR el modal */
+.modal-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* --- Estilo del Modal (Overlay y Mensaje) --- */
+
+/* El Overlay (El fondo traslúcido) */
+#modal-overlay {
+    /* Iniciamos oculto por defecto. JS añadirá .modal-visible */
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s; 
+
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Traslúcido */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* El Mensaje (La ventana central) */
+#modal-message {
+    height: 600px;
+    width: 400px;
+    
+    /* El centrado lo hace el overlay, no necesitamos flex/justify aquí */
+    display: block; 
+    
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    
+    /* Opcional: una pequeña animación de "zoom" al aparecer */
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+/* Animación del mensaje cuando es visible */
+.modal-visible #modal-message {
+    transform: scale(1);
+}
+
+#modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mensajeHeader {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;}
+
+#mensajeParrafo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.defaultSubmit {
+    background-color: rgb(155, 112, 216);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.defaultInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Ajusta el ancho para incluir el padding */
+    box-sizing: border-box;
+}
+
+.interactiveBox {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
