@@ -119,21 +119,3 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.defaultSubmit {
-    background-color: rgb(155, 112, 216);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    padding-top: 10px;
-}
-
-.defaultInput {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: calc(100% - 22px); /* Ajusta el ancho para incluir el padding */
-    box-sizing: border-box;
-}
-
